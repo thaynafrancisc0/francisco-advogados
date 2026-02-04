@@ -366,6 +366,64 @@ h1, h2, h3, .brand-name, .step-number, .footer-brand {
   color: #ffffff;
 }
 
+/* Estilização dos Cards Premium */
+.card-dor-premium {
+    background: #FFFFFF;
+    border: 1px solid rgba(85, 11, 20, 0.08); /* Borda bordô quase invisível */
+    padding: 45px 35px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.card-dor-premium:hover {
+    transform: translateY(-10px);
+    border-color: #550B14; /* Bordô Profundo */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.card-dor-premium i {
+    font-size: 2.2rem;
+    color: #550B14;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.card-dor-premium h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.card-dor-premium p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Link interno do card */
+.card-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #550B14;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.card-dor-premium:hover .card-link {
+    gap: 15px;
+}
 
 /* --- MOBILE TWEAKS --- */
 @media (max-width: 991px) {
